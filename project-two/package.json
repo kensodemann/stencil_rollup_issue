@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@stencil/core": "2.0.1",
-    "project-one": "/Users/e074694/EY/starterPOC/project-one"
+    "project-one": "../../project-one"
   },
   "license": "MIT"
 }
