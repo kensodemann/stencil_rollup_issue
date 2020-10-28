@@ -1,10 +1,11 @@
 import { Component, Prop, h } from '@stencil/core';
-import 'project-one'
+import 'project-one';
+import 'kws-weather-widgets';
 
 @Component({
   tag: 'your-component',
   styleUrl: 'your-component.css',
-  shadow: true,
+  shadow: true
 })
 export class YourComponent {
   /**
@@ -23,6 +24,15 @@ export class YourComponent {
   @Prop() last: string;
 
   render() {
-    return <div>Your component: <my-component></my-component> </div>;
+    return (
+      <div>
+        <div>
+          Your component: <my-component first="Maximan" last="Dudeface" middle="T"></my-component>
+        </div>
+        <div>
+          <kws-temperature temperature={300} scale="C"></kws-temperature>
+        </div>
+      </div>
+    );
   }
 }

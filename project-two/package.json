@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@stencil/core": "2.0.1",
-    "project-one": "../../project-one"
+    "kws-weather-widgets": "~2.0.3"
   },
   "license": "MIT"
 }
