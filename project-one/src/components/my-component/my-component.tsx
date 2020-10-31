@@ -27,6 +27,6 @@ export class MyComponent {
   }
 
   render() {
-    return <div>My component {this.getText()}</div>;
+    return <div>My component {this.getText()}${process.env.MODE}</div>;
   }
 }
